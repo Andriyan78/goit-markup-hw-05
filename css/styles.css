@@ -97,6 +97,7 @@ img{
 .link:hover,
 .link:focus{
     color: var(--btnbg-color);
+    transition: 250ms var(--timing-function);
 }
 .main-nav{
     display: flex;
@@ -151,6 +152,7 @@ img{
 .item-tele:focus {
     color: var(--btnbg-color);
     fill: var(--btnbg-color);
+    transition: 250ms var(--timing-function);
 }
 .header{
     border-bottom: 1px solid var(--border-header);
@@ -172,9 +174,7 @@ img{
     opacity:1;
     transition: 250ms var(--timing-function);
 }
-/* .area-link:hover:after{
-    opacity:1;
-} */
+
 /* Секція героя - шапка */
 .hat {
     max-width: 1600px;
@@ -223,6 +223,7 @@ img{
 .request:hover,
 .request:focus{
     background-color: #188ce8;
+    transition: 250ms var(--timing-function);
 }
 .backdrop{
     position: fixed;
@@ -280,7 +281,7 @@ img{
 .title{
     font-size: 16px;
 }
-.title-features, .hat-title, .title-features-foot,.team-title{
+.title-features, .hat-title, .title-features-foot,.team-title, .name{
     text-transform: uppercase;
 }
 .team-title {
@@ -320,12 +321,30 @@ img{
     background-color: var(--filter-color);
     margin-bottom: var(--card-set-gap);
 }
-/* .button-icon{
-    margin-bottom: var(--card-set-gap);
-} */
 .do{
     display: flex;
     gap: 30px;    
+}
+.do-products{
+    position: relative;    
+}
+.name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16.41/14);
+    letter-spacing: 0.03em;        
+}
+.product-name{
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--btnlet-color);
 }
 .team-section{
     background-color: var(--filter-color);
@@ -334,13 +353,10 @@ img{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 0  ;
-    /* margin-left: calc(-1*var(--card-set-gap));
-    margin-top: calc(-1*var(--card-set-gap)); */
+    padding: 0;
 }
 .item-team{
     background-color: var(--btnlet-color);
-    /* flex-basis: calc(100%/4 - 30px); */
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
@@ -353,6 +369,7 @@ img{
 .item-team:focus{
     box-shadow: var(--cards-box-shadow);
     cursor: pointer;
+    transition: 250ms var(--timing-function);
 }
 .prof{
     margin-bottom: 16px;
@@ -381,10 +398,12 @@ img{
 .custom-item:hover,
 .custom-item:focus{
     border: 1px solid var(--btnbg-color);
+    transition: 250ms var(--timing-function);
 }
 .cust-icon:hover,
 .cust-icon:focus {    
     fill: var(--btnbg-color);
+    transition: 250ms var(--timing-function);
 }
 .socialmedia{
     display: flex; 
@@ -399,14 +418,15 @@ img{
     height: 44px;
     border: none;
     background-color: transparent;
-    fill: var(--icon-color)
+    fill: var(--icon-color);
+    border-radius: 50%;
 }
 .icon:hover,
 .icon:focus{    
     background-color:var(--btnbg-color);
-    fill: var(--btnlet-color);
-    border-radius: 50%;
+    fill: var(--btnlet-color);    
     cursor: pointer;
+    transition: 250ms var(--timing-function);
 }
 .card-foot{
     padding: 30px;
@@ -474,12 +494,13 @@ img{
 }
 .project:hover .product-overlay{
     transform: translateY(0);
-    transition: transform 250ms var(--timing-function);
+    transition: 250ms var(--timing-function);
 }
 .project:hover,
 .project:focus{
     box-shadow: var(--cards-box-shadow);
     cursor: pointer;
+    transition: 250ms var(--timing-function);
 }
 
 .port-card-foot{
@@ -499,7 +520,10 @@ img{
 .buttonall:hover,
 .buttonall:focus{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: 250ms var(--timing-function);
 }
 .but:hover,
 .but:focus {
@@ -507,7 +531,10 @@ img{
     color: var(--btnlet-color);
     cursor: pointer;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: 250ms var(--timing-function);
 }
 /* Футер */
 .foot{
@@ -547,14 +574,17 @@ img{
 .cityaddr:hover,
 .cityaddr:focus{
     color: var(--btnbg-color);
+    transition: 250ms var(--timing-function);
 }
 .contactmail:hover,
 .contactmail:focus {
     color: var(--btnbg-color);
+    transition: 250ms var(--timing-function);
 }
 .contacttel:hover,
 .contacttel:focus {
     color: var(--btnbg-color);
+    transition: 250ms var(--timing-function);
 }
 .footmedia{
     color: var(--btnlet-color);
@@ -574,7 +604,8 @@ img{
 
 .icon-foot:hover,
 .icon-foot:focus {
-    background-color: var(--btnbg-color);   
+    background-color: var(--btnbg-color); 
+    transition: 250ms var(--timing-function);
 }
 .title-features-foot{
     font-weight: 700;
