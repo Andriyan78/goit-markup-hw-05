@@ -143,17 +143,18 @@ img{
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.item-mail:hover,
-.item-mail:focus {
-    color: var(--btnbg-color);
-    fill: currentColor ;
+.area-link:hover,
+.area-link:focus {
+    fill: currentColor;
+    color: var(--btnbg-color);    
+    transition: fill 250ms var(--timing-function) color 250ms var(--timing-function);
 }
-.item-tele:hover,
+/* .item-tele:hover,
 .item-tele:focus {
     color: var(--btnbg-color);
     fill: var(--btnbg-color);
     transition: 250ms var(--timing-function);
-}
+} */
 .header{
     border-bottom: 1px solid var(--border-header);
 }
