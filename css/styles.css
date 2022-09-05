@@ -143,8 +143,8 @@ img{
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.area-link:hover,
-.area-link:focus {
+.contact-link:hover,
+.contact-link:focus {
     fill: currentColor;
     color: var(--btnbg-color);    
     transition: fill 250ms var(--timing-function) color 250ms var(--timing-function);
