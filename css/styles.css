@@ -97,7 +97,6 @@ img{
 .link:hover,
 .link:focus{
     color: var(--btnbg-color);
-    transition: 250ms var(--timing-function);
 }
 .main-nav{
     display: flex;
@@ -132,8 +131,7 @@ img{
 .site-nav .link.current{
     color: var(--btnbg-color);
 }
-.item-tele,
-.item-mail {   
+.contact-link {   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -142,19 +140,16 @@ img{
     align-items: baseline;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: 250ms var(--timing-function);
 }
 .contact-link:hover,
 .contact-link:focus {
     fill: currentColor;
     color: var(--btnbg-color);    
-    transition: fill 250ms var(--timing-function) color 250ms var(--timing-function);
 }
-/* .item-tele:hover,
-.item-tele:focus {
-    color: var(--btnbg-color);
-    fill: var(--btnbg-color);
-    transition: 250ms var(--timing-function);
-} */
+.button-icon-envelope{
+    margin-right: 3px;
+}
 .header{
     border-bottom: 1px solid var(--border-header);
 }
@@ -163,6 +158,7 @@ img{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: 250ms var(--timing-function);
 }
 .area-link.current::after {
     content: '';
@@ -172,8 +168,7 @@ img{
     width: 100%;
     height: 5px;
     background-color: var(--btnbg-color);    
-    opacity:1;
-    transition: 250ms var(--timing-function);
+    opacity:1;    
 }
 
 /* Секція героя - шапка */
@@ -219,11 +214,11 @@ img{
     /* width: 160px; */
     border-radius: var(--btn-radius);
     border: none;
+    transition: 250ms var(--timing-function);
 }
 .request:hover,
 .request:focus{
-    background-color: #188ce8;
-    transition: 250ms var(--timing-function);
+    background-color: #188ce8;    
 }
 .backdrop{
     position: fixed;
@@ -364,12 +359,12 @@ img{
     width: 270px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 250ms var(--timing-function);
 }
 .item-team:hover,
 .item-team:focus{
     box-shadow: var(--cards-box-shadow);
-    cursor: pointer;
-    transition: 250ms var(--timing-function);
+    cursor: pointer;    
 }
 .prof{
     margin-bottom: 16px;
@@ -386,6 +381,7 @@ img{
     height: 92px;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
+    transition: 250ms var(--timing-function);
 }
 .cust-icon {
     display: flex;
@@ -394,16 +390,15 @@ img{
     width: 106px;
     height: 60px;
     fill: var(--icon-color);
+    transition: 250ms var(--timing-function);
 }
 .custom-item:hover,
 .custom-item:focus{
-    border: 1px solid var(--btnbg-color);
-    transition: 250ms var(--timing-function);
+    border: 1px solid var(--btnbg-color);    
 }
 .cust-icon:hover,
 .cust-icon:focus {    
-    fill: var(--btnbg-color);
-    transition: 250ms var(--timing-function);
+    fill: var(--btnbg-color);    
 }
 .socialmedia{
     display: flex; 
@@ -420,13 +415,14 @@ img{
     background-color: transparent;
     fill: var(--icon-color);
     border-radius: 50%;
+    transition: 250ms var(--timing-function);
 }
 .icon:hover,
 .icon:focus{    
     background-color:var(--btnbg-color);
     fill: var(--btnlet-color);    
     cursor: pointer;
-    transition: 250ms var(--timing-function);
+    
 }
 .card-foot{
     padding: 30px;
@@ -445,6 +441,7 @@ img{
     border: none;
     border-radius: var(--btn-radius);
     padding: 6px 22px;
+    transition: 250ms var(--timing-function);
 }
 .buttons{
     display: flex;
@@ -466,6 +463,7 @@ img{
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+    transition: 250ms var(--timing-function);
 }
 .project-item{
     width: 370px;
@@ -490,17 +488,16 @@ img{
     padding-bottom: 91px;
     padding-left: 24px;
     padding-right: 24px;
-    transform: translateY(100%);    
+    transform: translateY(100%); 
+    transition: 250ms var(--timing-function);  
 }
 .project:hover .product-overlay{
-    transform: translateY(0);
-    transition: 250ms var(--timing-function);
+    transform: translateY(0);    
 }
 .project:hover,
 .project:focus{
     box-shadow: var(--cards-box-shadow);
-    cursor: pointer;
-    transition: 250ms var(--timing-function);
+    cursor: pointer;    
 }
 
 .port-card-foot{
@@ -523,7 +520,7 @@ img{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
                 0px 1px 2px rgba(0, 0, 0, 0.08), 
                 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: 250ms var(--timing-function);
+    
 }
 .but:hover,
 .but:focus {
@@ -534,7 +531,6 @@ img{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
                 0px 1px 2px rgba(0, 0, 0, 0.08), 
                 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: 250ms var(--timing-function);
 }
 /* Футер */
 .foot{
@@ -559,6 +555,7 @@ img{
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--btnlet-color);
+    transition: 250ms var(--timing-function);
 }
 .contactmail,
 .contacttel {
@@ -567,24 +564,23 @@ img{
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition: 250ms var(--timing-function);
 }
 .mail-cont, .cityadr{
     margin-bottom: 10px;
 }
 .cityaddr:hover,
 .cityaddr:focus{
-    color: var(--btnbg-color);
-    transition: 250ms var(--timing-function);
+    color: var(--btnbg-color);    
 }
 .contactmail:hover,
 .contactmail:focus {
     color: var(--btnbg-color);
-    transition: 250ms var(--timing-function);
+    
 }
 .contacttel:hover,
 .contacttel:focus {
     color: var(--btnbg-color);
-    transition: 250ms var(--timing-function);
 }
 .footmedia{
     color: var(--btnlet-color);
@@ -600,12 +596,12 @@ img{
     border-radius:50%;
     fill: var(--btnlet-color);
     cursor: pointer;
+    transition: 250ms var(--timing-function);
 }
 
 .icon-foot:hover,
 .icon-foot:focus {
-    background-color: var(--btnbg-color); 
-    transition: 250ms var(--timing-function);
+    background-color: var(--btnbg-color);     
 }
 .title-features-foot{
     font-weight: 700;
