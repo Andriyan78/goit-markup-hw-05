@@ -137,10 +137,10 @@ img{
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -148,7 +148,7 @@ img{
     color: var(--btnbg-color);    
 }
 .button-icon-envelope{
-    margin-right: 3px;
+    margin-right: 5px;
 }
 .header{
     border-bottom: 1px solid var(--border-header);
@@ -158,7 +158,7 @@ img{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
 }
 .area-link.current::after {
     content: '';
@@ -214,7 +214,7 @@ img{
     /* width: 160px; */
     border-radius: var(--btn-radius);
     border: none;
-    transition: 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 .request:hover,
 .request:focus{
@@ -228,7 +228,7 @@ img{
     height: 100%;  
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: 250ms var(--timing-function);
+    transition: transform 250ms var(--timing-function);
 }
 .backdrop.is-hidden{
     position: relative;
@@ -244,7 +244,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    transition: 250ms var(--timing-function);   
+    transition: transform 250ms var(--timing-function);   
     width: 528px;
     height: 521px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -359,7 +359,7 @@ img{
     width: 270px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: 250ms var(--timing-function);
+    transition:  box-shadow 250ms var(--timing-function), cursor 250ms var(--timing-function);
 }
 .item-team:hover,
 .item-team:focus{
@@ -379,21 +379,21 @@ img{
     justify-content: center;
     width: 170px;
     height: 92px;
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
-    transition: 250ms var(--timing-function);
+    
 }
 .cust-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 106px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     fill: var(--icon-color);
-    transition: 250ms var(--timing-function);
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    transition:  fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
-.custom-item:hover,
-.custom-item:focus{
+.cust-icon:hover,
+.cust-icon:focus:focus{
     border: 1px solid var(--btnbg-color);    
 }
 .cust-icon:hover,
@@ -415,7 +415,7 @@ img{
     background-color: transparent;
     fill: var(--icon-color);
     border-radius: 50%;
-    transition: 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 .icon:hover,
 .icon:focus{    
@@ -441,7 +441,10 @@ img{
     border: none;
     border-radius: var(--btn-radius);
     padding: 6px 22px;
-    transition: 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function), 
+    text-shadow 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 .buttons{
     display: flex;
@@ -463,7 +466,7 @@ img{
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-    transition: 250ms var(--timing-function);
+    transition: box-shadow 250ms var(--timing-function);
 }
 .project-item{
     width: 370px;
@@ -488,8 +491,8 @@ img{
     padding-bottom: 91px;
     padding-left: 24px;
     padding-right: 24px;
-    transform: translateY(100%); 
-    transition: 250ms var(--timing-function);  
+    transform: translateY(101%); 
+    transition: transform 250ms var(--timing-function);  
 }
 .project:hover .product-overlay{
     transform: translateY(0);    
@@ -555,7 +558,7 @@ img{
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--btnlet-color);
-    transition: 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
 }
 .contactmail,
 .contacttel {
@@ -564,7 +567,7 @@ img{
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    transition: 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function);
 }
 .mail-cont, .cityadr{
     margin-bottom: 10px;
@@ -596,7 +599,7 @@ img{
     border-radius:50%;
     fill: var(--btnlet-color);
     cursor: pointer;
-    transition: 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function);
 }
 
 .icon-foot:hover,
